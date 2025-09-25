@@ -305,10 +305,20 @@ function App() {
                         {predictions.map((p) => (
                           <td className="px-4 py-2" key={p.person}>
                             {p.prediction[index] && (
-                              <TeamLogo
-                                team={p.prediction[index]}
-                                teams={table}
-                              />
+                              <div
+                                className={
+                                  topTen
+                                    .map((t) => t.team.shortName)
+                                    .includes(p.prediction[index])
+                                    ? ""
+                                    : "opacity-30"
+                                }
+                              >
+                                <TeamLogo
+                                  team={p.prediction[index]}
+                                  teams={table}
+                                />
+                              </div>
                             )}
                           </td>
                         ))}
