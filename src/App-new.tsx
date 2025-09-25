@@ -254,10 +254,24 @@ function App() {
     <div className="min-h-screen flex items-start justify-center p-8">
       <div className="w-full max-w-6xl">
         <header className="mb-6">
-          <h1 className="text-2xl font-semibold">Title</h1>
-          <p className="text-sm text-gray-600">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Exercitationem, commodi!
+          <h1 className="text-3xl font-semibold mb-4">
+            Plex: Premier League Top 10 Predictions
+          </h1>
+          <p className="text-md text-gray-600">
+            <ul className="list-disc list-inside">
+              <li>
+                5 point for{" "}
+                <span className="bg-green-100">korrekt position</span>
+              </li>
+              <li>
+                2 point for <span className="bg-yellow-100">korrekt hold</span>
+              </li>
+              <li>Præmier til Top 3 🏆</li>
+              <li>
+                Spillet slutter den 4. November, efter <strong>runde 10</strong>
+                , og udsatte kampe herefter udgår
+              </li>
+            </ul>
           </p>
         </header>
 
