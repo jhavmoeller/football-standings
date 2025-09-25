@@ -15,20 +15,20 @@ export type TableEntry = {
   };
 };
 
-type PersonWithScore = {
-  person: string;
-  score: {
-    score: number;
-    inTopTen: string[];
-    correctPosition: string[];
-  };
-};
+// type PersonWithScore = {
+//   person: string;
+//   score: {
+//     score: number;
+//     inTopTen: string[];
+//     correctPosition: string[];
+//   };
+// };
 
-type RankGroup = {
-  rank: number;
-  points: number;
-  persons: PersonWithScore[];
-};
+// type RankGroup = {
+//   rank: number;
+//   points: number;
+//   persons: PersonWithScore[];
+// };
 
 const predictions = [
   {
