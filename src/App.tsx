@@ -1,10 +1,9 @@
 import { useCallback, useMemo, useState } from "react";
-import "./App.css";
 
 const url =
   "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v5/competitions/8/seasons/2025/standings?live=false";
 
-type TableEntry = {
+export type TableEntry = {
   overall: {
     position: number;
     points: number;
@@ -218,8 +217,8 @@ function App() {
   };
 
   return (
-    <>
-      <table>
+    <div className="flex">
+      <table className="table-auto border-collapse border border-slate-400">
         <thead>
           <tr>
             <th>Position</th>
@@ -265,7 +264,7 @@ function App() {
             </li>
           ))}
       </ol>
-    </>
+    </div>
   );
 }
 
