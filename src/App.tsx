@@ -213,7 +213,7 @@ function App() {
 
   const getLogo = (teamName: string) => {
     const teamId = table.find((t) => t.team.shortName === teamName)?.team.id;
-    if (!teamId) return null;
+    if (!teamId) return "";
     return `https://resources.premierleague.com/premierleague25/badges-alt/${teamId}.png`;
   };
 
